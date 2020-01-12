@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% include 'partials/head.html' with { title: title } %}
+</head>
+<body>
+<div>
+    <h1>File Uploader</h1>
+    {% if pageName == 'form' %}
+        {% include 'partials/form.html' %}
+    {% elseif pageName == 'sending' %}
+        {% include 'partials/sending.html' %}
+    {% endif %}
+</div>
+</body>
+</html>
